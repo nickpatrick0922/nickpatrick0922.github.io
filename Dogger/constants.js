@@ -7,12 +7,11 @@ var STAGE_WIDTH = 650,
 
 	GAME_FONTS = "bold 20px sans-serif";
 
-<<<<<<< HEAD
-var PATH_CHAR = "img/ziggy.png";
-=======
+
+
 var PATH_CHAR = "Ziggy.png";
 var PATH_BACKGROUND="Road.png";
->>>>>>> origin/master
+
 
 var CHAR_WIDTH = 64,
 	CHAR_HEIGHT = 64,
