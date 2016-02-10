@@ -1,8 +1,8 @@
 //------------
 //System Values
 //------------
-var STAGE_WIDTH = 500,
-	STAGE_HEIGHT = 500,
+var STAGE_WIDTH = 550,
+	STAGE_HEIGHT = 550,
 	TIME_PER_FRAME = 200,
 
 	GAME_FONTS = "bold 20px sans-serif";
