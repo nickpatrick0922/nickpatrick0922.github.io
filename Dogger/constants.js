@@ -11,11 +11,15 @@ var STAGE_WIDTH = 600,
 
 var PATH_CHAR = "ziggy.png";
 var PATH_BACKGROUND="Road.png";
+var PATH_CAR="car.png";
+
+
+
 
 
 var CHAR_WIDTH = 64,
 	CHAR_HEIGHT = 64,
-	CHAR_START_X = 0,
+	CHAR_START_X = 60,
 	CHAR_START_Y = 0,
 	IMAGE_START_X = 0,
 	IMAGE_START_Y = 0,
