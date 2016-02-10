@@ -8,7 +8,7 @@ var STAGE_WIDTH = 600,
 
 	GAME_FONTS = "bold 20px sans-serif";
 
-var PATH_CHAR = "img/spritesheet.png";
+var PATH_CHAR = "img/ziggy.png";
 
 var CHAR_WIDTH = 72,
 	CHAR_HEIGHT = 96,
@@ -21,4 +21,3 @@ var CHAR_WIDTH = 72,
 var TEXT_PRELOADING = "Loading ...",
 	TEXT_PRELOADING_X = 200,
 	TEXT_PRELOADING_Y = 200;
-	
