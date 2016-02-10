@@ -45,7 +45,7 @@ currY = IMAGE_START_Y;
 function update()
 {
 	//Draw Canvas Background
-	ctx.drawImage(backgroundImage,0,0,650,650,0,0,650,650);
+	ctx.drawImage(backgroundImage,0,0,600,600,0,0,600,600);
 
 	//Draw Character
 	ctx.drawImage(charImage,currX,currY,CHAR_WIDTH,CHAR_HEIGHT,
