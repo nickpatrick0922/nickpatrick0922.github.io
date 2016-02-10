@@ -9,7 +9,7 @@ var STAGE_WIDTH = 650,
 
 
 
-var PATH_CHAR = "Ziggy.png";
+var PATH_CHAR = "ziggy.png";
 var PATH_BACKGROUND="Road.png";
 
 
