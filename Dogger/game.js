@@ -12,6 +12,11 @@ var charImage = new Image();
 var backgroundImage = new Image();
 backgroundImage.src = "Road.png";
 
+
+var carImage = new Image();
+carImage.src="car.png";
+
+
 charImage.ready = false;
 charImage.happy = true;
 charImage.onload = setAssetReady;
@@ -47,6 +52,7 @@ function update()
 	//Draw Canvas Background
 	ctx.drawImage(backgroundImage,0,0,600,600,0,0,600,600);
 
+	ctx.drawImage(carImage, 0, 0, 128, 32, 20, 20,128,32);
 	//Draw Character
 	ctx.drawImage(charImage,currX,currY,CHAR_WIDTH,CHAR_HEIGHT,
 					CHAR_START_X,CHAR_START_Y,
