@@ -8,7 +8,7 @@ var STAGE_WIDTH = 600,
 
 	GAME_FONTS = "bold 20px sans-serif";
 
-var PATH_CHAR = "Dogger/spritesheet.png";
+var PATH_CHAR = "spritesheet.png";
 
 var CHAR_WIDTH = 72,
 	CHAR_HEIGHT = 96,
