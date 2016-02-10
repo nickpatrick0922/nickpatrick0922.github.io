@@ -1,22 +1,26 @@
 //------------
 //System Values
 //------------
-var STAGE_WIDTH = 600,
-	STAGE_HEIGHT = 400,
-	//TIME_PER_FRAME = 33, //this equates to 30 fps
-	TIME_PER_FRAME = 200, //this equates to 30 fps
+var STAGE_WIDTH = 650,
+	STAGE_HEIGHT = 650,
+	TIME_PER_FRAME = 200,
 
 	GAME_FONTS = "bold 20px sans-serif";
 
+<<<<<<< HEAD
 var PATH_CHAR = "img/ziggy.png";
+=======
+var PATH_CHAR = "Ziggy.png";
+var PATH_BACKGROUND="Road.png";
+>>>>>>> origin/master
 
-var CHAR_WIDTH = 72,
-	CHAR_HEIGHT = 96,
-	CHAR_START_X = 200,
-	CHAR_START_Y = 200,
+var CHAR_WIDTH = 64,
+	CHAR_HEIGHT = 64,
+	CHAR_START_X = 0,
+	CHAR_START_Y = 0,
 	IMAGE_START_X = 0,
-	IMAGE_START_Y = 98,
-	SPRITE_WIDTH = 216;
+	IMAGE_START_Y = 0,
+	SPRITE_WIDTH = 192;
 
 var TEXT_PRELOADING = "Loading ...",
 	TEXT_PRELOADING_X = 200,
