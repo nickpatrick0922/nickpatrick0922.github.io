@@ -51,7 +51,7 @@ function update()
 	ctx.drawImage(charImage,currX,currY,CHAR_WIDTH,CHAR_HEIGHT,
 					CHAR_START_X,CHAR_START_Y,
 					CHAR_WIDTH,CHAR_HEIGHT);
-					currX += CHAR_WIDTH;
+					currX = 0;
 	if (currX >= SPRITE_WIDTH)
 		currX = 0;
 }
