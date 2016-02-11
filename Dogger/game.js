@@ -128,6 +128,7 @@ function onKeyDown(evt)
 						{
 
 						}
+						else
 						{
 						CHAR_START_X=CHAR_START_X+CHARSPEED;
 						currX=40;
