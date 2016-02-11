@@ -85,11 +85,19 @@ function onKeyDown(evt)
 						{
 
 						}
-						else {
 
+						else if(CHAR_START_Y>=CAR1_START_Y && CHAR_START_Y<=CAR1_START_Y+CAR1_HEIGHT)
+						{
+							window.alert("Congragulations, you guided Ziggy home safely!");
+						}
+
+						else {
 							CHAR_START_Y=CHAR_START_Y-CHARSPEED; // GO UP
 							currX=0;
 						}
+
+
+
 					}
 					break;
 
