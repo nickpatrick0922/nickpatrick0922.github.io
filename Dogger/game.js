@@ -215,6 +215,7 @@ function update()
 							window.alert("You lose!");
 							CHAR_START_X = 520;
 							CHAR_START_Y = 10;
+							currX=0;
 						}
 						else {
 						}
@@ -227,6 +228,7 @@ function update()
 							window.alert("You lose!");
 							CHAR_START_X = 520;
 							CHAR_START_Y = 10;
+							currX=0;
 						}
 						else {
 						}
@@ -239,6 +241,7 @@ function update()
 							window.alert("You lose!");
 							CHAR_START_X = 520;
 							CHAR_START_Y = 10;
+							currX=0;
 						}
 						else {
 						}
@@ -251,6 +254,7 @@ function update()
 							window.alert("You lose!");
 							CHAR_START_X = 520;
 							CHAR_START_Y = 10;
+							currX=0;
 						}
 						else {
 						}
@@ -263,6 +267,7 @@ function update()
 							window.alert("You lose!");
 							CHAR_START_X = 520;
 							CHAR_START_Y = 10;
+							currX=0;
 						}
 						else {
 						}
@@ -274,6 +279,7 @@ function update()
 							window.alert("You lose!");
 							CHAR_START_X = 520;
 							CHAR_START_Y = 10;
+							currX=0;
 						}
 						else {
 						}
@@ -287,6 +293,7 @@ function update()
 								window.alert("You win!");
 								CHAR_START_X = 520;
 								CHAR_START_Y = 10;
+								currX=0;
 						}
 						else {
 
