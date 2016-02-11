@@ -88,7 +88,7 @@ function onKeyDown(evt)
 						else {
 
 							CHAR_START_Y=CHAR_START_Y-CHARSPEED; // GO UP
-							currX=0;	
+							currX=0;
 						}
 					}
 					break;
@@ -110,15 +110,28 @@ function onKeyDown(evt)
 
 			case 37:  /* Left arrow was pressed */
 					{
-						CHAR_START_X=CHAR_START_X-CHARSPEED;
-						currX = 80;
+						if(CHAR_START_X-CHARSPEED<0)
+						{
+
+						}
+						else
+						{
+							CHAR_START_X=CHAR_START_X-CHARSPEED;
+							currX = 80;
+						}
 					}
 					break;
 			case 39:  /* Right arrow was pressed */
 
 					{
+						if(CHAR_START_X+CHAR_WIDTH+CHARSPEED>STAGE_WIDTH)
+						{
+
+						}
+						{
 						CHAR_START_X=CHAR_START_X+CHARSPEED;
 						currX=40;
+						}
 					}
 					break;
 			case 16: // shift key
