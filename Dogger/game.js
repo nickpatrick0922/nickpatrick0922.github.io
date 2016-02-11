@@ -284,10 +284,13 @@ function update()
 						window.alert("You win!");
 						CHAR_START_X = 520;
 						CHAR_START_Y = 10;
+						else {
+							
+						}
 
 					}
 
-					
+
 
 
 
