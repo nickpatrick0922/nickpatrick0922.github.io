@@ -109,7 +109,7 @@ function onKeyDown(evt)
 
 
 
-						else if(CHAR_START_Y>=CAR1_START_Y && CHAR_START_Y<=CAR1_START_Y+CAR1_HEIGHT)
+						else if(CHAR_START_Y+CHAR_HEIGHT>=CAR1_START_Y && CHAR_START_Y<=CAR1_START_Y+CAR1_HEIGHT)
 						{
 							window.alert("Congragulations, you guided Ziggy home safely!");
 						}
