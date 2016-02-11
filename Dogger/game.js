@@ -52,8 +52,10 @@ function update()
 	//Draw Canvas Background
 	ctx.drawImage(backgroundImage,0,0,600,600,0,0,600,600);
 
-	ctx.drawImage(carImage, 0, 20, 64, 30, 60, 65,64,30);
-	ctx.drawImage(carImage, 64, 20, 64, 30, 60, 135,64,30);
+	ctx.drawImage(carImage, 0, 10, 40, 30, 45, 70,40,30);
+	ctx.drawImage(carImage, 0, 10, 40, 30, 500, 135,40,30);
+
+
 
 	//Draw Character
 	ctx.drawImage(charImage,currX,currY,CHAR_WIDTH,CHAR_HEIGHT,
