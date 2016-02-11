@@ -214,35 +214,47 @@ function update()
 					{
 						if(CHAR_START_X+CHAR_WIDTH>=CAR1_START_X && CHAR_START_X<=CAR1_START_X+CAR1_WIDTH)
 						window.alert("You lose!");
+						CHAR_START_X = 520;
+						CHAR_START_Y = 10;
 					}
 
 					if(CHAR_START_Y+CHAR_HEIGHT>=CAR2_START_Y+10 && CHAR_START_Y<=CAR2_START_Y+CAR2_HEIGHT-10)
 					{
 						if(CHAR_START_X+CHAR_WIDTH>=CAR2_START_X && CHAR_START_X<=CAR2_START_X+CAR2_WIDTH)
 						window.alert("You lose!");
+						CHAR_START_X = 520;
+						CHAR_START_Y = 10;
 					}
 
 					if(CHAR_START_Y+CHAR_HEIGHT>=CAR3_START_Y+10 && CHAR_START_Y<=CAR3_START_Y+CAR3_HEIGHT-10)
 					{
 						if(CHAR_START_X+CHAR_WIDTH>=CAR3_START_X && CHAR_START_X<=CAR3_START_X+CAR3_WIDTH)
 						window.alert("You lose!");
+						CHAR_START_X = 520;
+						CHAR_START_Y = 10;
 					}
 
 					if(CHAR_START_Y+CHAR_HEIGHT>=CAR4_START_Y+10 && CHAR_START_Y<=CAR4_START_Y+CAR4_HEIGHT-10)
 					{
 						if(CHAR_START_X+CHAR_WIDTH>=CAR4_START_X && CHAR_START_X<=CAR4_START_X+CAR4_WIDTH)
 						window.alert("You lose!");
+						CHAR_START_X = 520;
+						CHAR_START_Y = 10;
 					}
 
 					if(CHAR_START_Y+CHAR_HEIGHT>=CAR5_START_Y+10 && CHAR_START_Y<=CAR5_START_Y+CAR5_HEIGHT-10)
 					{
 						if(CHAR_START_X+CHAR_WIDTH>=CAR5_START_X && CHAR_START_X<=CAR5_START_X+CAR5_WIDTH)
 						window.alert("You lose!");
+						CHAR_START_X = 520;
+						CHAR_START_Y = 10;
 					}
 					if(CHAR_START_Y+CHAR_HEIGHT>=CAR6_START_Y+10 && CHAR_START_Y<=CAR6_START_Y+CAR6_HEIGHT-10)
 					{
 						if(CHAR_START_X+CHAR_WIDTH>=CAR6_START_X && CHAR_START_X<=CAR6_START_X+CAR6_WIDTH)
 						window.alert("You lose!");
+						CHAR_START_X = 520;
+						CHAR_START_Y = 10;
 					}
 
 
