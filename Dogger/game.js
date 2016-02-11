@@ -214,9 +214,11 @@ function update()
 					{
 						if(CHAR_START_X+CHAR_WIDTH>=CAR1_START_X && CHAR_START_X<=CAR1_START_X+CAR1_WIDTH)
 						{
-							window.alert("You lose!");
 							CHAR_START_X = 520;
 							CHAR_START_Y = 10;
+							window.alert("You lose!");
+						}
+						else {
 						}
 					}
 
