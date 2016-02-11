@@ -29,7 +29,7 @@ var carImage = new Image();
 carImage.src="car.png";
 
 
-
+var timer;
 
 
 
@@ -66,6 +66,8 @@ function preloading()
 	{
 		clearInterval(preloader);
 		gameloop = setInterval(update, TIME_PER_FRAME);
+		timer = new Timer();
+		timer.reset();
 	}
 }
 
@@ -79,28 +81,34 @@ function onKeyDown(evt)
 			case 38:  /* Up arrow was pressed */
 
 					{
-						CHAR_START_Y=CHAR_START_Y-5; // GO UP
+						CHAR_START_Y=CHAR_START_Y-CHARSPEED; // GO UP
 						currX=0;
 					}
 					break;
 
 			case 40:  /* Down arrow was pressed */
 					{
-						CHAR_START_Y=CHAR_START_Y+5;
-						currX=0;
+						if(CHAR_START_Y+CHAR_HEIGHT+CHARSPEED>STAGE_HEIGHT)
+						{
+							window.alert("Hello world!");
+						}
+						else {
+							CHAR_START_Y=CHAR_START_Y+CHARSPEED;
+							currX=0;
+						}
 					}
 					break;
 
 			case 37:  /* Left arrow was pressed */
 					{
-						CHAR_START_X=CHAR_START_X-5;
+						CHAR_START_X=CHAR_START_X-CHARSPEED;
 						currX = 80;
 					}
 					break;
 			case 39:  /* Right arrow was pressed */
 
 					{
-						CHAR_START_X=CHAR_START_X+5;
+						CHAR_START_X=CHAR_START_X+CHARSPEED;
 						currX=40;
 					}
 					break;
@@ -147,7 +155,6 @@ function update()
 	ctx.drawImage(backgroundImage,0,0,600,600,0,0,600,600);
 
 
-	//Draw Cars
 
 
 
@@ -172,13 +179,21 @@ function update()
 					CHAR_START_X,CHAR_START_Y,
 					CHAR_WIDTH,CHAR_HEIGHT);
 
+
+
+
+
+
+
 					if(CAR1_START_X+CAR1_WIDTH>STAGE_WIDTH)
 					{
 						CAR1_SPEED=-CAR1_SPEED;
+						car1currX=40;
 					}
 					else if(CAR1_START_X<0)
 					{
 							CAR1_SPEED=-CAR1_SPEED;
+							car1currX=0;
 					}
 
 
@@ -186,10 +201,12 @@ function update()
 					if(CAR2_START_X+CAR2_WIDTH>STAGE_WIDTH)
 					{
 						CAR2_SPEED=-CAR2_SPEED;
+						car2currX=40;
 					}
 					else if(CAR2_START_X<0)
 					{
 							CAR2_SPEED=-CAR2_SPEED;
+							car2currX=0;
 					}
 
 
@@ -197,40 +214,48 @@ function update()
 					if(CAR3_START_X+CAR3_WIDTH>STAGE_WIDTH)
 					{
 						CAR3_SPEED=-CAR3_SPEED;
+						car3currX=40;
 					}
 					else if(CAR3_START_X<0)
 					{
 							CAR3_SPEED=-CAR3_SPEED;
+							car3currX=0;
 					}
 
 
 					if(CAR4_START_X+CAR4_WIDTH>STAGE_WIDTH)
 					{
 						CAR4_SPEED=-CAR4_SPEED;
+						car4currX=40;
 					}
 					else if(CAR4_START_X<0)
 					{
 							CAR4_SPEED=-CAR4_SPEED;
+							car4currX=0;
 					}
 
 
 					if(CAR5_START_X+CAR5_WIDTH>STAGE_WIDTH)
 					{
 						CAR5_SPEED=-CAR5_SPEED;
+						car5currX=40;
 					}
 					else if(CAR5_START_X<0)
 					{
 							CAR5_SPEED=-CAR5_SPEED;
+							car5currX=0;
 					}
 
 
 					if(CAR6_START_X+CAR6_WIDTH>STAGE_WIDTH)
 					{
 						CAR6_SPEED=-CAR6_SPEED;
+						car6currX=40;
 					}
 					else if(CAR6_START_X<0)
 					{
 							CAR6_SPEED=-CAR6_SPEED;
+							car6currX=0;
 					}
 
 					CAR1_START_X+=CAR1_SPEED;
@@ -240,16 +265,8 @@ function update()
 					CAR5_START_X+=CAR5_SPEED;
 					CAR6_START_X+=CAR6_SPEED;
 
-
-
-
-
-
-
-
-
-
-
+					currentTime = timer.getElapsedTime();
+   				output.innerHTML = currentTime;
 
 
 
