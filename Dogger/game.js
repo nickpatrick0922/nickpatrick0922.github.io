@@ -282,7 +282,7 @@ function update()
 					if(CHAR_START_Y+CHAR_HEIGHT==STAGE_HEIGHT)
 					{
 
-						if(CHAR_START_X<45)
+						if(CHAR_START_X<85)
 						{
 								window.alert("You win!");
 								CHAR_START_X = 520;
