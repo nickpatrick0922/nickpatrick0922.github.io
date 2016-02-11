@@ -90,7 +90,7 @@ function onKeyDown(evt)
 					{
 						if(CHAR_START_Y+CHAR_HEIGHT+CHARSPEED>STAGE_HEIGHT)
 						{
-							window.alert("Congragulations, you guided Ziggy home safely!");
+							window.alert("Congragulations, you guided Ziggy home safely!" + currentTime);
 							return;
 						}
 						else {
