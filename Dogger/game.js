@@ -81,8 +81,15 @@ function onKeyDown(evt)
 			case 38:  /* Up arrow was pressed */
 
 					{
-						CHAR_START_Y=CHAR_START_Y-CHARSPEED; // GO UP
-						currX=0;
+						if(CHAR_START_Y-CHARSPEED<0)
+						{
+
+						}
+						else {
+
+							CHAR_START_Y=CHAR_START_Y-CHARSPEED; // GO UP
+							currX=0;	
+						}
 					}
 					break;
 
