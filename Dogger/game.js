@@ -107,18 +107,13 @@ function onKeyDown(evt)
 							CHAR_START_Y = 10;
 						}
 
-
-
-						else if(CHAR_START_Y+CHAR_HEIGHT+CHARSPEED>=CAR1_START_Y && CHAR_START_Y<=CAR1_START_Y+CAR1_HEIGHT)
-						{
-							window.alert("Congragulations, you guided Ziggy home safely!");
-						}
-
-
-
 						else {
 							CHAR_START_Y=CHAR_START_Y+CHARSPEED;
 							currX=0;
+							if(CHAR_START_Y+CHAR_HEIGHT+>=CAR1_START_Y && CHAR_START_Y<=CAR1_START_Y+CAR1_HEIGHT)
+							{
+								window.alert("Congragulations, you guided Ziggy home safely!");
+							}
 						}
 					}
 					break;
