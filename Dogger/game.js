@@ -216,6 +216,12 @@ function update()
 						window.alert("You lose!");
 					}
 
+					if(CHAR_START_Y+CHAR_HEIGHT>=CAR2_START_Y+10 && CHAR_START_Y<=CAR2_START_Y+CAR2_HEIGHT-10)
+					{
+						if(CHAR_START_X+CHAR_WIDTH>=CAR2_START_X && CHAR_START_X<=CAR2_START_X+CAR2_WIDTH)
+						window.alert("You lose!");
+					}
+
 
 
 					if(CAR1_START_X+CAR1_WIDTH>STAGE_WIDTH)
