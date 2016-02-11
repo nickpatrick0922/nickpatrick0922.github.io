@@ -86,10 +86,7 @@ function onKeyDown(evt)
 
 						}
 
-						else if(CHAR_START_Y>=CAR1_START_Y && CHAR_START_Y<=CAR1_START_Y+CAR1_HEIGHT)
-						{
-							window.alert("Congragulations, you guided Ziggy home safely!");
-						}
+
 
 						else {
 							CHAR_START_Y=CHAR_START_Y-CHARSPEED; // GO UP
@@ -109,6 +106,16 @@ function onKeyDown(evt)
 							CHAR_START_X = 520;
 							CHAR_START_Y = 10;
 						}
+
+
+
+						else if(CHAR_START_Y>=CAR1_START_Y && CHAR_START_Y<=CAR1_START_Y+CAR1_HEIGHT)
+						{
+							window.alert("Congragulations, you guided Ziggy home safely!");
+						}
+
+
+
 						else {
 							CHAR_START_Y=CHAR_START_Y+CHARSPEED;
 							currX=0;
