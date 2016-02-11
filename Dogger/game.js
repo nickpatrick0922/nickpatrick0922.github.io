@@ -110,11 +110,6 @@ function onKeyDown(evt)
 						else {
 							CHAR_START_Y=CHAR_START_Y+CHARSPEED;
 							currX=0;
-							if(CHAR_START_Y+CHAR_HEIGHT+CHARSPEED>=CAR1_START_Y && CHAR_START_Y<=CAR1_START_Y+CAR1_HEIGHT)
-							{
-								if(CHAR_START_X+CHAR_WIDTH>=CAR1_START_X && CHAR_START_X<=CAR1_START_X+CAR1_WIDTH)
-								window.alert("You lose!");
-							}
 						}
 					}
 					break;
