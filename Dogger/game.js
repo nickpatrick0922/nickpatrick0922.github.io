@@ -281,14 +281,22 @@ function update()
 
 					if(CHAR_START_Y+CHAR_HEIGHT==STAGE_HEIGHT)
 					{
-						window.alert("You win!");
-						CHAR_START_X = 520;
-						CHAR_START_Y = 10;
+
+						if(CHAR_START_X<85)
+						{
+								window.alert("You win!");
+								CHAR_START_X = 520;
+								CHAR_START_Y = 10;
+						}
 						else {
 
 						}
 
 					}
+
+
+
+
 
 
 
