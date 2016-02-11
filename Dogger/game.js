@@ -278,14 +278,12 @@ function update()
 						else {
 						}
 					}
-					if(CHAR_START_Y+CHAR_HEIGHT==STAGE_HEIGHT)
+					if(CHAR_START_Y+CHAR_HEIGHT==STAGE_HEIGHT && CHAR_START_X<100)
 					{
-						if(CHAR_START_X<100)
-						{
 						window.alert("You win!");
 						CHAR_START_X = 520;
 						CHAR_START_Y = 10;
-						}
+
 					}
 
 
