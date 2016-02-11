@@ -279,7 +279,7 @@ function update()
 						}
 					}
 
-					if(CHAR_START_Y+CHAR_HEIGHT==STAGE_HEIGHT && CHAR_START_X<95)
+					if(CHAR_START_Y+CHAR_HEIGHT==STAGE_HEIGHT && CHAR_START_X<92)
 					{
 						window.alert("You win!");
 						CHAR_START_X = 520;
