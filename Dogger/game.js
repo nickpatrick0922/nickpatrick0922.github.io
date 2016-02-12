@@ -174,7 +174,12 @@ function onKeyDown(evt)
 	car5currY = CAR5IMAGE_START_Y;
 	car6currY = CAR6IMAGE_START_Y;
 
-
+	function getElapsedTime(date) {
+	    var relative_to = (arguments.length > 1) ? arguments[1] : new Date();
+	    var delta = parseInt((relative_to.getTime() - date) / 1000);
+	    delta = delta + (relative_to.getTimezoneOffset() * 60);
+			return delta.toString();
+	}
 //main function to update frame
 function update()
 {
