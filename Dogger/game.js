@@ -301,7 +301,8 @@ function update()
 
 						if(CHAR_START_X<85)
 						{
-								alert(getElapsedTime(startTime));
+								var time = getElapsedTime(startTime);
+								window.alert(time);
 								CHAR_START_X = 520;
 								CHAR_START_Y = 10;
 								currX=0;
