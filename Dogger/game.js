@@ -309,7 +309,7 @@ function update()
 						if(CHAR_START_X<85)
 						{
 								var win = presses.toString();
-								alert(win);
+								alert("You won in " + win + "moves");
 								CHAR_START_X = 520;
 								CHAR_START_Y = 10;
 								currX=0;
