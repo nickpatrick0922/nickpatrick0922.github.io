@@ -301,12 +301,10 @@ function update()
 
 						if(CHAR_START_X<85)
 						{
-
-								window.alert("You win!");
+								alert("You win!");
 								CHAR_START_X = 520;
 								CHAR_START_Y = 10;
 								currX=0;
-							
 						}
 						else {
 
@@ -403,7 +401,6 @@ function update()
 					CAR5_START_X+=CAR5_SPEED;
 					CAR6_START_X+=CAR6_SPEED;
 
-					currentTime = timer.getElapsedTime();
 
 
 
