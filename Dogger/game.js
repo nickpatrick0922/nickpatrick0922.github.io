@@ -29,7 +29,7 @@ var carImage = new Image();
 carImage.src="car.png";
 
 
-
+var presses;
 
 
 
@@ -69,6 +69,7 @@ function preloading()
 	{
 		clearInterval(preloader);
 		gameloop = setInterval(update, TIME_PER_FRAME);
+		presses=0;
 	}
 }
 
@@ -100,7 +101,7 @@ function onKeyDown(evt)
 							currX=0;
 						}
 
-
+						presses++;
 
 					}
 					break;
@@ -116,6 +117,7 @@ function onKeyDown(evt)
 							CHAR_START_Y=CHAR_START_Y+CHARSPEED;
 							currX=0;
 						}
+						presses++;
 					}
 					break;
 
@@ -130,6 +132,7 @@ function onKeyDown(evt)
 							CHAR_START_X=CHAR_START_X-CHARSPEED;
 							currX = 80;
 						}
+						presses++;
 					}
 					break;
 			case 39:  /* Right arrow was pressed */
@@ -144,6 +147,7 @@ function onKeyDown(evt)
 						CHAR_START_X=CHAR_START_X+CHARSPEED;
 						currX=40;
 						}
+						presses++;
 					}
 					break;
 			case 16: // shift key
