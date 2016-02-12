@@ -301,12 +301,12 @@ function update()
 
 						if(CHAR_START_X<85)
 						{
-								var time = getElapsedTime(startTime);
-								window.alert(time);
+
+								window.alert("You win!");
 								CHAR_START_X = 520;
 								CHAR_START_Y = 10;
 								currX=0;
-								startTime=endTime;
+							
 						}
 						else {
 
