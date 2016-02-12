@@ -71,6 +71,7 @@ function preloading()
 	{
 		clearInterval(preloader);
 		gameloop = setInterval(update, TIME_PER_FRAME);
+		startTime = new Date();
 	}
 }
 
