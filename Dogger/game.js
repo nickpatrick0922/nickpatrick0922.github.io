@@ -297,7 +297,8 @@ function update()
 						if(CHAR_START_X<85)
 						{
 							  var endTime = new Date();        //Get the current time.
-								alert(startTime.getElapsedTime().toString());
+								var difference = startTime-endTime;
+								alert(difference.toSring());
 								CHAR_START_X = 520;
 								CHAR_START_Y = 10;
 								currX=0;
