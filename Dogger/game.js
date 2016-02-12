@@ -296,10 +296,14 @@ function update()
 
 						if(CHAR_START_X<85)
 						{
-								window.alert("You win!");
+							  var endTime = new Date();        //Get the current time.
+								var timeSpent=(endTime - startTime);        //Find out how long it's been.
+			 					window.alert(timeSpent.toString());
+
 								CHAR_START_X = 520;
 								CHAR_START_Y = 10;
 								currX=0;
+								startTime=endTime;
 						}
 						else {
 
