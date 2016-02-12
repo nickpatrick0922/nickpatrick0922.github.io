@@ -71,7 +71,6 @@ function preloading()
 	{
 		clearInterval(preloader);
 		gameloop = setInterval(update, TIME_PER_FRAME);
-		startTime = new Date();
 	}
 }
 
@@ -320,8 +319,6 @@ function update()
 
 						if(CHAR_START_X<85)
 						{
-								timeToHit = now.getTime() - startTime.getTime();
-								updateTimeToHit();
 								alert("You win!");
 								CHAR_START_X = 520;
 								CHAR_START_Y = 10;
