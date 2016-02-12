@@ -94,8 +94,7 @@ function updateTimeToHit() {
 }
 
 
-timeToHit = now.getTime() - startTime.getTime();
-    updateTimeToHit();
+
 
 //on KeyDown events used to control character and switch sprite location (up,down,left, right)
 function onKeyDown(evt)
@@ -203,7 +202,6 @@ function update()
 {
 
 
-	
 
 	//add keyboard listener
 	window.addEventListener('keydown',onKeyDown,true);
