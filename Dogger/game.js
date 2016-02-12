@@ -203,7 +203,7 @@ function update()
 {
 
 
-	updateClock();
+	
 
 	//add keyboard listener
 	window.addEventListener('keydown',onKeyDown,true);
