@@ -29,9 +29,7 @@ var carImage = new Image();
 carImage.src="car.png";
 
 
-var timeToHit = 0;
-var now;
-var startTime;
+
 
 
 
@@ -71,27 +69,13 @@ function preloading()
 	{
 		clearInterval(preloader);
 		gameloop = setInterval(update, TIME_PER_FRAME);
-		startTime = new Date();
 	}
 }
 
 
-function updateClock() {
-  now = new Date();
-  var hh = now.getHours();
-  if ( hh < 10 ) hh = "0" + hh;
-  var mm = now.getMinutes();
-  if ( mm < 10 ) mm = "0" + mm;
-  var ss = now.getSeconds();
-  if ( ss < 10 ) ss = "0" + ss;
-  var msec = now.getMilliseconds();
-  document.getElementById( "clock" ).innerHTML = "time = " + hh + ":" + mm + ":" + ss + '.' + msec;
-  t = setTimeout( 'updateClock()',100 );
-}
 
-function updateTimeToHit() {
-  document.getElementById( "timeToHit" ).innerHTML = "time to hit = " + timeToHit + " milliseconds";
-}
+
+
 
 
 
@@ -202,7 +186,6 @@ function update()
 {
 
 
-	updateClock();
 
 	//add keyboard listener
 	window.addEventListener('keydown',onKeyDown,true);
@@ -322,8 +305,6 @@ function update()
 						if(CHAR_START_X<85)
 						{
 								alert("You win!");
-								timeToHit = now.getTime() - startTime.getTime();
-								updateTimeToHit();
 								CHAR_START_X = 520;
 								CHAR_START_Y = 10;
 								currX=0;
