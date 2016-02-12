@@ -1,14 +1,17 @@
 //------------
 //System Values
 //------------
-var STAGE_WIDTH = 600,
+
+	//stage variables
+	var STAGE_WIDTH = 600,
 	STAGE_HEIGHT = 600,
 	TIME_PER_FRAME = 200,
 
+	//game font
 	GAME_FONTS = "bold 20px sans-serif";
 
 
-
+//image for sprites
 var PATH_CHAR = "ziggy.png";
 var PATH_BACKGROUND="Road.png";
 var PATH_CAR="car.png";
@@ -16,7 +19,7 @@ var PATH_CAR="car.png";
 
 
 
-
+//character constants
 var CHAR_WIDTH = 40,
 	CHAR_HEIGHT = 40,
 	CHAR_START_X = 520,
@@ -25,6 +28,9 @@ var CHAR_WIDTH = 40,
 	IMAGE_START_Y = 0,
 	SPRITE_WIDTH = 120;
 
+
+
+//car 1-6 constants
 	var CAR1_WIDTH = 40,
 		CAR1_HEIGHT = 30,
 		CAR1_START_X = 150,
@@ -74,6 +80,7 @@ var CHAR_WIDTH = 40,
 							CAR6SPRITE_WIDTH = 120;
 
 
+							//speeds
 							var CAR1_SPEED=65,
 									CAR2_SPEED=-50,
 									CAR3_SPEED=42,
@@ -83,7 +90,7 @@ var CHAR_WIDTH = 40,
 									CHARSPEED=10;
 
 
-
+//preloading
 var TEXT_PRELOADING = "Loading ...",
 	TEXT_PRELOADING_X = 200,
 	TEXT_PRELOADING_Y = 200;

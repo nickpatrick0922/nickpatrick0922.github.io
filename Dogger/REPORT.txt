@@ -1,0 +1,21 @@
+A description of your game (about 1 page)
+objective of the game
+graphical objects,
+how they animate,
+how they interact and
+how scoring work.
+A set of screenshots of your game in action
+instructions for a new user on how to use your game
+
+
+
+Dogger, a game similar to the game frogger, involves a dog trying to cross the
+street to get back to her dog house. The dog, Ziggy, is faced with a scenario involving
+6 lanes of traffic with three sidewalks in between as well as patches of grass that
+serve as safe zones. Simply put,the objective of the game is to get to the dog house
+AS QUICKLY AS POSSIBLE without getting hit by the moving cars on the way.
+If at any point Ziggy is hit with a car, the game starts over and the timer resets.
+Thus, the scoring in this game is based on time.
+
+This game was inspired by my German Shepherd Ziggy. She may escape from time
+to time but she always makes it back home :)

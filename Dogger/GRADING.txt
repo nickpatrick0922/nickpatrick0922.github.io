@@ -1,0 +1,48 @@
+DEFINITION OF GAME OBJECTS = 10
+
+    car1-car6 objects
+    character object (dog)
+    background Object
+
+
+ANIMATION OF GAME OBJECTS = 20
+
+    car1-car6 objects (car.png)
+    character object (Ziggy.png)
+    background object (Road.png)
+
+
+INTERACTION BETWEEN GAME OBJECTS = 20
+
+    cars collide with background width-border, change direction, and flip
+    character moves with keyboard presses
+    cars collide with character (game over)
+    character collides with bottom border of background (win game when Ziggy in dog house at x=85 and y=background height)
+
+
+OBJECTIVE = 10
+
+    finish as quickly as possible
+    timer
+
+
+COMPLEXITY = 18
+
+    More complex than pong, but slightly less complex than pacman
+    To be honest, the description on the rubric sort of confused me for this part
+
+
+DOCUMENTATION = 15
+
+      All files present
+      Commented Code
+
+
+DEMO/PROJECT GALLERY = 3
+
+      Web page functional
+      1/2 prepared demo
+
+
+
+TOTAL = 96
