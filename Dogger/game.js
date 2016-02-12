@@ -29,6 +29,10 @@ var carImage = new Image();
 carImage.src="car.png";
 
 
+var timeToHit = 0;
+var now;
+var startTime;
+
 
 
 
@@ -67,12 +71,31 @@ function preloading()
 	{
 		clearInterval(preloader);
 		gameloop = setInterval(update, TIME_PER_FRAME);
-		var startTime = new Date();        //Start the clock!
-
+		startTime = new Date();
 	}
 }
 
 
+function updateClock() {
+  now = new Date();
+  var hh = now.getHours();
+  if ( hh < 10 ) hh = "0" + hh;
+  var mm = now.getMinutes();
+  if ( mm < 10 ) mm = "0" + mm;
+  var ss = now.getSeconds();
+  if ( ss < 10 ) ss = "0" + ss;
+  var msec = now.getMilliseconds();
+  document.getElementById( "clock" ).innerHTML = "time = " + hh + ":" + mm + ":" + ss + '.' + msec;
+  t = setTimeout( 'updateClock()',100 );
+}
+
+function updateTimeToHit() {
+  document.getElementById( "timeToHit" ).innerHTML = "time to hit = " + timeToHit + " milliseconds";
+}
+
+
+timeToHit = now.getTime() - startTime.getTime();
+    updateTimeToHit();
 
 //on KeyDown events used to control character and switch sprite location (up,down,left, right)
 function onKeyDown(evt)
@@ -174,15 +197,13 @@ function onKeyDown(evt)
 	car5currY = CAR5IMAGE_START_Y;
 	car6currY = CAR6IMAGE_START_Y;
 
-	function getElapsedTime(date) {
-	    var relative_to = (arguments.length > 1) ? arguments[1] : new Date();
-	    var delta = parseInt((relative_to.getTime() - date) / 1000);
-	    delta = delta + (relative_to.getTimezoneOffset() * 60);
-			return delta.toString();
-	}
+
 //main function to update frame
 function update()
 {
+
+
+	updateClock();
 
 	//add keyboard listener
 	window.addEventListener('keydown',onKeyDown,true);
@@ -301,6 +322,8 @@ function update()
 
 						if(CHAR_START_X<85)
 						{
+								timeToHit = now.getTime() - startTime.getTime();
+								updateTimeToHit();
 								alert("You win!");
 								CHAR_START_X = 520;
 								CHAR_START_Y = 10;
